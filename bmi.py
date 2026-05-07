@@ -24,7 +24,7 @@ def bmi():
         height=height/100
         bmi=round(weight/(height**2),2)
         label4.config(text=bmi)
-        wiek=get_wiek
+        wiek=get_wiek()
     except ValueError:
         label4.config(text="Nic nie wpisaleś",fg="red")
     except ZeroDivisionError:
